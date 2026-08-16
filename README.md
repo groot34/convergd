@@ -23,6 +23,29 @@ pnpm test          # runs every package's tests
 pnpm --filter @convergd/core test:watch   # TDD the engine
 ```
 
+## Final tech snapshot (what we'll run locally and deploy)
+
+- Language: TypeScript monorepo (pnpm workspaces)
+- Realtime: WebSocket (`ws`) + HTTP (`fastify`) for history endpoints
+- Persistence: SQLite (`better-sqlite3`) for local/demo; Postgres for production
+- AI / RAG: optional `packages/ai` Node microservice (Hugging Face / OpenAI for embeddings + generation)
+- Containerization: Docker + `docker-compose` for local dev and deploy
+- Observability: Prometheus + Grafana (metrics exported from server)
+
+## Run locally (recommended dev flow)
+
+Install dependencies and run tests:
+```bash
+pnpm install
+pnpm test
+```
+
+Dev with docker-compose (after scaffolded):
+```bash
+docker-compose up --build
+# or pnpm --filter @convergd/server dev
+```
+
 ## The core in 30 seconds
 
 A document is a **tree of characters**, not a string:
