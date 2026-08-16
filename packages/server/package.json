@@ -1,0 +1,9 @@
+{
+  "name": "@convergd/server",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "echo \"(phase 3) no server tests yet\" && exit 0"
+  }
+}

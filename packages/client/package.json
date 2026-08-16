@@ -1,0 +1,9 @@
+{
+  "name": "@convergd/client",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "echo \"(phase 4) no client tests yet\" && exit 0"
+  }
+}
