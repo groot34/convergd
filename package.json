@@ -6,7 +6,11 @@
   "scripts": {
     "test": "pnpm -r test",
     "build": "pnpm -r build",
-    "lint": "biome check ."
+    "lint": "biome check .",
+    "dev": "docker-compose up --build",
+    "compose:up": "docker-compose up --build",
+    "compose:down": "docker-compose down",
+    "dev:server": "pnpm --filter @convergd/server dev"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
