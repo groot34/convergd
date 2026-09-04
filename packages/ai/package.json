@@ -1,0 +1,11 @@
+{
+  "name": "@convergd/ai",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js",
+    "test": "echo \"(ai) no AI tests yet\" && exit 0"
+  }
+}
